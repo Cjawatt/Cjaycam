@@ -3,7 +3,7 @@ response = input("Yes or no?: ")
 
 
 if response == "yes":
-    print("Nice Job")
+    print("Okay have fun")
 
 if response == "no":
     print("Get Out My Face!!! if u dont wanna play go away then")
@@ -41,7 +41,7 @@ if want_instructions == "":
 import random
 
 options = ("Paper", "Scissors", "Rock",)
-player_options = ("Rock", "Paper", "Scissors", "Dragon")
+player_options = ("Rock", "Paper", "Scissors", "Dragon", "James")
 running = True
 while running:
     player = None
@@ -50,7 +50,7 @@ while running:
 
 
     while player not in player_options:
-        player = input("Enter what you would like to play rock, paper, scissors or secret one??: ")
+        player = input("Enter either rock, paper, scissors or the secret one?: ")
 
     print(f"Player: {player}")
     print(f"Computer: {computer}")
@@ -70,6 +70,12 @@ while running:
         print("you have won!")
     elif player == "Dragon" and computer == "Scissors":
         print("you have won!")
+    elif player == "James" and computer == "Paper":
+     print("you have won!")
+    elif player == "James" and computer == "Rock":
+        print("you have won!")
+    elif player == "James" and computer == "Scissors":
+        print("you have won!")
 
 
     else:
@@ -77,4 +83,5 @@ while running:
 
     if not input("press Yes if u wanna continue playing: ").lower() == "yes":
         running = False
+        print("Thank you for playing")
         print("Thank you for playing")
